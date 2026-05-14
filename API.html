@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Weather Search App</title>
+	<link rel="stylesheet" href="api.css">
+</head>
+
+	<div>
+        
+        <div class="profile-header">
+            <img src="profile-pego.png" alt="A round image of a Pegomastax africana wearing a generic red party hat.">
+            <h1>S.M. Cerato</h1>
+            <p class="title">Ameratur Information Collector</p>
+			<p> "Nothing is wasted." </p>
+        </div>
+
+    </div>
+</head>
+<nav>
+	<a href="index.html">About Me</a> |  
+	<a href="wordgame.html">Guess The Word</a> | 
+	<a href="todo.html">To-Do List</a> |
+	<a href="api.html">Weather Search</a> | 
+	<a href="port.html">Portfolio Mock-up</a> | 
+	<a href="https://github.com/SM-Ceratosaurus">GitHub Page</a>
+</nav>
+
+<body>
+
+  <div class="container">
+    <h1>Weather Search App</h1>
+
+    <p class="instructions">
+      Enter a city name to search for current weather conditions.
+    </p>
+
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter a city name..." />
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <div id="loading" class="loading"></div>
+    <div id="error" class="error"></div>
+    <div id="results"></div>
+  </div>
+
+  <script src="api.js"></script>
+
+</body>
+</html>
