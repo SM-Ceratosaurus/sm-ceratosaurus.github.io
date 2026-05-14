@@ -1,0 +1,103 @@
+    * {
+      box-sizing: border-box;
+    }
+
+    nav {
+		text-align: center;
+		max-width: 900px;
+        margin: 40px auto;
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+	}
+	
+	p {
+		margin-left: 70px;
+		margin-right: 70px;
+		margin-top: 40px;
+		text-align: center;
+		border-redius: 8px;
+	}
+	
+	    .profile-header {
+        flex: 1;
+        text-align: center;
+        }
+		
+		        .title {
+            color: #0A1E57;
+            font-size: 18px;
+        }
+	
+	body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+        h1 {
+            margin: 15px 0 5px;
+        }
+
+    #game-board {
+      display: grid;
+      grid-template-columns: repeat(5, 60px);
+      grid-template-rows: repeat(6, 60px);
+      gap: 6px;
+      margin: 20px 0;
+    }
+
+    .tile {
+      width: 60px;
+      height: 60px;
+      border: 2px solid #3a3a3c;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      background: grey;
+    }
+
+    .correct {
+      background: #538d4e;
+      border-color: #538d4e;
+    }
+
+    .present {
+      background: #b59f3b;
+      border-color: #b59f3b;
+    }
+
+    .absent {
+      background: #3a3a3c;
+      border-color: #3a3a3c;
+    }
+
+    #message {
+      height: 30px;
+      margin-top: 10px;
+      font-size: 1.2rem;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+      border-radius: 6px;
+      background: #538d4e;
+      color: white;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }

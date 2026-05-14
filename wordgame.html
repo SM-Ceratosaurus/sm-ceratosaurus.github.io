@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="wordgame.css">
+  <title>Guess The Game</title>
+</head>
+
+<div>
+        
+        <div class="profile-header">
+            <img src="profile-pego.png" alt="A round image of a Pegomastax africana wearing a generic red party hat.">
+            <h1>S.M. Cerato</h1>
+            <p class="title">Ameratur Information Collector</p>
+			<p> "Nothing is wasted." </p>
+        </div>
+
+    </div>
+
+<nav>
+	<a href="index.html">About Me</a> |   
+	<a href="wordgame.html">Guess The Word</a> | 
+	<a href="https://github.com/SM-Ceratosaurus">GitHub Page</a>
+</nav>
+
+<body>
+
+  <h1>Guess The Word</h1>
+  
+    <p> Use your keyboard to enter a five-letter word guess and press enter.
+		If the color is greyed out, the letter isn't used in the secret word.
+		If the color is yellow, it is used but is in the wrong position.
+		If the color is green, it is the correct letter and position.
+		You have up to 6 guesses to get it right, good luck!
+	</p>
+
+  <div id="game-board"></div>
+
+  <div id="message"></div>
+
+  <button id="restart-btn">Restart Game</button>
+
+  <script src="wordjs.js"></script>
+
+</body>
+</html>
