@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List App</title>
+	<link rel="stylesheet" href="todo.css">
+</head>
+
+<div>
+        
+        <div class="profile-header">
+            <img src="profile-pego.png" alt="A round image of a Pegomastax africana wearing a generic red party hat.">
+            <h1>S.M. Cerato</h1>
+            <p class="title">Ameratur Information Collector</p>
+			<p> "Nothing is wasted." </p>
+        </div>
+
+    </div>
+
+<nav>
+	<a href="index.html">About Me</a> |   
+	<a href="wordgame.html">Guess The Word</a> | 
+	<a href="todo.html">To-Do List</a> | 
+	<a href="https://github.com/SM-Ceratosaurus">GitHub Page</a>
+</nav>
+
+
+<body>
+
+<div class="app">
+  <h1>To-Do List</h1>
+
+  <form id="taskForm">
+    <input
+      type="text"
+      id="taskInput"
+      placeholder="Enter task"
+    />
+
+    <select id="tagInput">
+      <option value="">No Tag</option>
+      <option value="school">School</option>
+      <option value="work">Work</option>
+      <option value="personal">Personal</option>
+    </select>
+
+    <button type="submit">Add</button>
+  </form>
+
+  <div class="error" id="error"></div>
+
+  <div class="filters">
+    <button data-filter="all" class="filter-btn active">All</button>
+    <button data-filter="active" class="filter-btn">Active</button>
+    <button data-filter="completed" class="filter-btn">Completed</button>
+
+    <select id="tagFilter">
+      <option value="all">All Tags</option>
+      <option value="school">School</option>
+      <option value="work">Work</option>
+      <option value="personal">Personal</option>
+    </select>
+  </div>
+
+  <ul id="taskList"></ul>
+
+  <div class="counter" id="counter"></div>
+</div>
+
+<script src="todo.js"></script>
+
+</body>
+</html>
