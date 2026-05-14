@@ -1,0 +1,183 @@
+
+	/* marry marry quite contrary how does your garden grow */
+    :root {
+      /* Type Scale */
+      --fs-1: 0.875rem;
+      --fs-2: 1rem;
+      --fs-3: 1.25rem;
+      --fs-4: 2rem;
+      --fs-5: 3rem;
+
+      /* Spacing Scale */
+      --space-1: 0.5rem;
+      --space-2: 1rem;
+      --space-3: 1.5rem;
+      --space-4: 2rem;
+      --space-5: 4rem;
+
+      /* Colors */
+      --bg: #f5f7fb;
+      --surface: #ffffff;
+      --text: #1e293b;
+      --muted: #64748b;
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+
+      /* Layout */
+      --container-width: 1100px;
+      --radius: 12px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 90%;
+      max-width: var(--container-width);
+      margin-inline: auto;
+    }
+
+    section {
+      padding: var(--space-5) 0;
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.2;
+      margin-bottom: var(--space-2);
+    }
+
+    h1 {
+      font-size: var(--fs-5);
+    }
+
+    h2 {
+      font-size: var(--fs-4);
+    }
+
+    h3 {
+      font-size: var(--fs-3);
+    }
+
+    p {
+      margin-bottom: var(--space-2);
+      color: var(--muted);
+      font-size: var(--fs-2);
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--radius);
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover,
+    .btn:focus {
+      background: var(--primary-dark);
+    }
+
+    .navbar {
+      background: white;
+      padding: var(--space-2) 0;
+      border-bottom: 1px solid #dbe2ea;
+    }
+
+    .nav-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2);
+      align-items: center;
+    }
+
+    .logo {
+      font-size: var(--fs-3);
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: var(--space-3);
+      list-style: none;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .hero {
+      text-align: center;
+      padding: var(--space-5) 0;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin-inline: auto;
+      margin-bottom: var(--space-3);
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-3);
+      margin-top: var(--space-4);
+    }
+
+    .card {
+      background: var(--surface);
+      padding: var(--space-3);
+      border-radius: var(--radius);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .card img {
+      border-radius: var(--radius);
+      margin-bottom: var(--space-2);
+    }
+
+    footer {
+      text-align: center;
+      padding: var(--space-3);
+      background: white;
+      border-top: 1px solid #dbe2ea;
+      font-size: var(--fs-1);
+    }
+
+    @media (min-width: 768px) {
+      .nav-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .hero {
+        padding: 6rem 0;
+      }
+
+      .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
